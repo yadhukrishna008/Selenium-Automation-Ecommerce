@@ -1,4 +1,4 @@
-Feature: Check if a product is in Topdeals page
+Feature: Validate if a product is in Topdeals page
 
 @topDeal
 Scenario Outline: Go to topdeals page and search for the product

@@ -22,12 +22,14 @@ public class HomePageObject {
 	private By searchVeg= By.xpath("//input[@class='search-keyword']");
 	private By add2CartBut= By.xpath("//button[normalize-space()='ADD TO CART']");
 	private By getProdName= By.xpath("//h4[@class='product-name']");
-	private By increaseProdQauntity= By.xpath("//div[@class='stepper-input']/a[@class='increment']");
-	private By decreaseProdQauntity= By.xpath("//div[@class='stepper-input']/a[@class='decrement']");
+	private By increaseProdQauntity= By.xpath("//a[@class='increment']");
+	private By decreaseProdQauntity= By.xpath("//a[@class='decrement']");
 	private By cartIcon= By.xpath("//a[@class='cart-icon']");
 	private By cartItem= By.xpath("//div[@class='cart-preview active']//p[@class='product-name']");
+	private By cartItemPrice= By.xpath("//div[@class=\"cart\"]//p[@class='amount']");
+	private By cartItemQuantity= By.xpath("//div[@class=\"cart\"]//p[@class='quantity']");
 	private By topDealsLink= By.xpath("//div[@class='cart']/a[text()='Top Deals']");
-	
+
 	
 //	Actions
 	public void searchProd(String prod) {
@@ -59,6 +61,14 @@ public class HomePageObject {
 	
 	public String getCartProdName() {
 		return driver.findElement(cartItem).getText().split(" ")[0];
+	}
+	
+	public int getProdQuantity() {
+		return Integer.parseInt(driver.findElement(cartItemQuantity).getText().split(" ")[0]);
+	}
+	
+	public int getProdTotalPrice() {
+		return Integer.parseInt(driver.findElement(cartItemPrice).getText().split(" ")[0]);
 	}
 	
 	public void clickTopDealsLink() {

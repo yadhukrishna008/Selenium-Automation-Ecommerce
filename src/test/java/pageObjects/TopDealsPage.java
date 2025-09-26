@@ -29,10 +29,11 @@ public class TopDealsPage {
 	//Action
 	public void productSearch(String product) throws InterruptedException {
 		productSearchField.sendKeys(product);
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 	}
 	
 	public String getProdName() {
+		
 		if (topDealProdName != null) {
 //			System.out.println(topDealProdName.getText());
 			return topDealProdName.getText();			

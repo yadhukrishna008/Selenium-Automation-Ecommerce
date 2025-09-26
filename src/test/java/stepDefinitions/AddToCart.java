@@ -41,14 +41,20 @@ public class AddToCart {
 	    homePO.addToCart();
 	}
 	
-	@When("Go to the Cart")
-	public void go_to_the_cart() throws InterruptedException {
+	@When("User opens the cart")
+	public void User_opens_the_cart() throws InterruptedException {
 	    homePO.clickOnCart();
-	    prodInCartName= homePO.getCartProdName();
+	}
+	
+	@Then("Check if {int} quatity of the product is added and verify total price is {int}")
+	public void check_if_quatity_of_the_product_is_added_and_verify_total_price(Integer int1, Integer int2) {
+		Assert.assertEquals(homePO.getProdQuantity(), int1);
+		Assert.assertEquals(homePO.getProdTotalPrice(), int2);
 	}
 	
 	@Then("Product is succesfully added")
 	public void product_is_succesfully_added() {
+		prodInCartName= homePO.getCartProdName();
 	    Assert.assertEquals(prodInCartName, productName);
 	}	
 
