@@ -46,7 +46,7 @@ public class TestBase {
 			driver.manage().window().maximize();
 			driver.get(myApp);
 		}
-
+ 
 		return driver;
 	}
 }
