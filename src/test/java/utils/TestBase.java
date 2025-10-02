@@ -8,12 +8,14 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-//import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	WebDriver driver;
+	WebDriverWait myWait;
 //	private String browser;
 	
 	public WebDriver webDriverManager() throws IOException{
@@ -44,7 +46,6 @@ public class TestBase {
 					System.out.println("Browser is not valid");
 			}
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//			WebDriverWait myWait= new WebDriverWait(driver, Duration.ofSeconds(10));
 			driver.manage().window().maximize();
 			driver.get(myApp);
 		}

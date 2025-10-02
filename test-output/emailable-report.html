@@ -9,34 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">13,251</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,704</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testRunner.MyRunnerTest</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1758905760552</td><td rowspan="2">10828</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">testRunner.MyRunnerTest</td><td><a href="#m2">runScenario</a></td><td rowspan="5">1758905760552</td><td rowspan="5">10956</td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testRunner.MyRunnerTest</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1759397170901</td><td rowspan="1">9394</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testRunner.MyRunnerTest</td><td><a href="#m1">runScenario</a></td><td rowspan="1">1759397170902</td><td rowspan="1">7614</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to topdeals page and search for the product&quot;</td><td>&quot;Validate if a product is in Topdeals page&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [no data] but found [mushroom]
+<h2>Default test</h2><h3 id="m0">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify quantity update in Cart&quot;</td><td>&quot;Validate GreenKart Shopping Application&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [4] but found [2]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.TopDeals.check_if_element_exist(TopDeals.java:38)
-	at ✽.Check if element exist(file:///C:/Users/yadhu/eclipse-workspace/MyTest/GreenKart/src/test/resources/FeatureFiles/checkTopDeals.feature:8)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at stepDefinitions.HomeAndCart.check_if_quatity_of_the_product_is_added_and_verify_total_price(HomeAndCart.java:63)
+	at ✽.Check if &quot;4&quot; quantity of the product is added(file:///C:/Users/yadhu/eclipse-workspace/MyTest/GreenKart/src/test/resources/FeatureFiles/validate_shoping.feature:27)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to topdeals page and search for the product&quot;</td><td>&quot;Validate if a product is in Topdeals page&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [no data] but found [cucumber]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at stepDefinitions.TopDeals.check_if_element_exist(TopDeals.java:38)
-	at ✽.Check if element exist(file:///C:/Users/yadhu/eclipse-workspace/MyTest/GreenKart/src/test/resources/FeatureFiles/checkTopDeals.feature:8)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to topdeals page and search for the product&quot;</td><td>&quot;Validate if a product is in Topdeals page&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to topdeals page and search for the product&quot;</td><td>&quot;Validate if a product is in Topdeals page&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to topdeals page and search for the product&quot;</td><td>&quot;Validate if a product is in Topdeals page&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Search for a product and add to cart&quot;</td><td>&quot;Validate that user is able to search and add the product to cart&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to topdeals page and search for the product&quot;</td><td>&quot;Validate if a product is in Topdeals page&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testRunner.MyRunnerTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Remove item from cart&quot;</td><td>&quot;Validate GreenKart Shopping Application&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

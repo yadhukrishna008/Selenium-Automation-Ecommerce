@@ -1,173 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-26T18:55:59 CEST" name="Default suite" finished-at="2025-09-26T18:56:13 CEST" duration-ms="13251">
+  <suite started-at="2025-10-02T11:26:10 CEST" name="Default suite" finished-at="2025-10-02T11:26:20 CEST" duration-ms="10704">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-26T18:55:59 CEST" name="Default test" finished-at="2025-09-26T18:56:13 CEST" duration-ms="13251">
+    <test started-at="2025-10-02T11:26:10 CEST" name="Default test" finished-at="2025-10-02T11:26:20 CEST" duration-ms="10704">
       <class name="testRunner.MyRunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:55:59 CEST" name="setUpClass" finished-at="2025-09-26T18:56:00 CEST" duration-ms="684" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-10-02T11:26:10 CEST" name="setUpClass" finished-at="2025-10-02T11:26:10 CEST" duration-ms="617" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1b7cae6f]]>
+                <![CDATA[org.testng.TestRunner@2f04105]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:11 CEST" duration-ms="10956" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-10-02T11:26:10 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T11:26:20 CEST" duration-ms="9394" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Go to topdeals page and search for the product"]]>
+                <![CDATA["Verify quantity update in Cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Validate if a product is in Topdeals page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:09 CEST" duration-ms="9297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Go to topdeals page and search for the product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate if a product is in Topdeals page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:09 CEST" duration-ms="8943" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Go to topdeals page and search for the product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate if a product is in Topdeals page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:11 CEST" duration-ms="10971" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search for a product and add to cart"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate that user is able to search and add the product to cart"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:11 CEST" duration-ms="10769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Go to topdeals page and search for the product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate if a product is in Topdeals page"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:11 CEST" duration-ms="10828" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Go to topdeals page and search for the product"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Validate if a product is in Topdeals page"]]>
+                <![CDATA["Validate GreenKart Shopping Application"]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [no data] but found [mushroom]]]>
+              <![CDATA[expected [4] but found [2]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [no data] but found [mushroom]
+              <![CDATA[java.lang.AssertionError: expected [4] but found [2]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinitions.TopDeals.check_if_element_exist(TopDeals.java:38)
-at ✽.Check if element exist(file:///C:/Users/yadhu/eclipse-workspace/MyTest/GreenKart/src/test/resources/FeatureFiles/checkTopDeals.feature:8)
+at org.testng.Assert.assertEquals(Assert.java:1431)
+at org.testng.Assert.assertEquals(Assert.java:1395)
+at org.testng.Assert.assertEquals(Assert.java:1441)
+at stepDefinitions.HomeAndCart.check_if_quatity_of_the_product_is_added_and_verify_total_price(HomeAndCart.java:63)
+at ✽.Check if "4" quantity of the product is added(file:///C:/Users/yadhu/eclipse-workspace/MyTest/GreenKart/src/test/resources/FeatureFiles/validate_shoping.feature:27)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:00 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-26T18:56:11 CEST" duration-ms="11023" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-10-02T11:26:10 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-02T11:26:18 CEST" duration-ms="7614" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Go to topdeals page and search for the product"]]>
+                <![CDATA["Remove item from cart"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Validate if a product is in Topdeals page"]]>
+                <![CDATA["Validate GreenKart Shopping Application"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [no data] but found [cucumber]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [no data] but found [cucumber]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at stepDefinitions.TopDeals.check_if_element_exist(TopDeals.java:38)
-at ✽.Check if element exist(file:///C:/Users/yadhu/eclipse-workspace/MyTest/GreenKart/src/test/resources/FeatureFiles/checkTopDeals.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-09-26T18:56:11 CEST" name="tearDownClass" finished-at="2025-09-26T18:56:13 CEST" duration-ms="1504" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.MyRunnerTest@6f45df59]" started-at="2025-10-02T11:26:20 CEST" name="tearDownClass" finished-at="2025-10-02T11:26:20 CEST" duration-ms="646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

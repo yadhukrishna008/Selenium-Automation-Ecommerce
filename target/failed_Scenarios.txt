@@ -1,1 +1,1 @@
-file:src/test/resources/FeatureFiles/checkTopDeals.feature:17:18
+file:src/test/resources/FeatureFiles/validate_shoping.feature:18

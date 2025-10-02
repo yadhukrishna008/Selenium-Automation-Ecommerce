@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features= "src/test/resources/FeatureFiles/",
 		glue= {"stepDefinitions"},
-		tags= "@add2cart or @topDeal",
+		tags= "@common",
 		dryRun=false,
 		monochrome= true,
 		plugin= {"pretty", 
@@ -18,7 +18,6 @@ import io.cucumber.testng.CucumberOptions;
 				"rerun:target/failed_Scenarios.txt"
 		}
 		)
-
 public class MyRunnerTest extends AbstractTestNGCucumberTests {
 	@Override
 	@DataProvider(parallel=true)

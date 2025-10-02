@@ -2,14 +2,13 @@ package utils;
 
 import java.io.IOException;
 import java.util.HashMap;
-
-//import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver;
 
 import pageObjects.PageObjectManager;
 import stepDefinitions.Hooks;
 
 public class TestContextSetUp {
-//	public WebDriver driver;
+	public WebDriver driver;
 	public TestBase test;
 	public PageObjectManager pageObjectManager;
 	public Hooks hooks;
