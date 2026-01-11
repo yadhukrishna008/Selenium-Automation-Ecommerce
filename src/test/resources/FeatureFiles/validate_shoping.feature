@@ -13,7 +13,6 @@ Feature: Validate GreenKart Shopping Application
     Then Cart should contain "Tomato"
     And Verify there are no other extra products in cart
     
-	#done - need to ask abt 4 then statements
 	@common
   Scenario: Verify quantity update in Cart
     Given User is on GreenKart home page
@@ -29,7 +28,6 @@ Feature: Validate GreenKart Shopping Application
     And Cart should contain "Carrot"
     And Verify there are no other extra products in cart
 
-#done
   @common
     Scenario: Remove item from cart
     Given User is on GreenKart home page
@@ -44,7 +42,6 @@ Feature: Validate GreenKart Shopping Application
     Then Cart should contain "Potato"
     And Verify there are no other extra products in cart
 
-#done
 #@common
   Scenario: Validate Checkout button navigation
     Given User is on GreenKart home page
