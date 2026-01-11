@@ -39,7 +39,8 @@ public class TestBase {
 					driver= new ChromeDriver();
 					break;
 				case "edge":
-					System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\edgedriver-win64\\msedgedriver.exe");
+					// System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\test\\resources\\edgedriver-win64\\msedgedriver.exe");
+					WebDriverManager.edgedriver().setup();
 					driver= new EdgeDriver();
 					break;
 				default:
