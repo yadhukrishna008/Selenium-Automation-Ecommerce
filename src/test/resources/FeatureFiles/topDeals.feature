@@ -1,6 +1,6 @@
 Feature: Validate if a product is in Topdeals page
 
-@topDeal    #need to check whether to add exception for expected fail scenario
+@topDeal
 Scenario Outline: Go to topdeals page and search for the product
 	Given User is on GreenKart home page
 	When Click on the topdeals link and go to the topdeals page
